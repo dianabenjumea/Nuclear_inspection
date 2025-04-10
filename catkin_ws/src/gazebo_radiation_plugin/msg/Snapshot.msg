@@ -1,0 +1,9 @@
+gazebo_radiation_plugins/Location at
+gazebo_radiation_plugins/Location currentLoc
+gazebo_radiation_plugins/Location position
+gazebo_radiation_plugins/WayP wayPNow
+gazebo_radiation_plugins/WayP wayPNext
+gazebo_radiation_plugins/Command command
+int16 inspected
+float64 r
+string radiationStatus
