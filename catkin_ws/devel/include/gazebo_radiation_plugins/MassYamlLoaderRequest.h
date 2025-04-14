@@ -87,16 +87,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAllocator> >
   : TrueType
   { };
@@ -104,6 +94,16 @@ struct IsMessage< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAl
 template <class ContainerAllocator>
 struct IsMessage< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::gazebo_radiation_plugins::MassYamlLoaderRequest_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

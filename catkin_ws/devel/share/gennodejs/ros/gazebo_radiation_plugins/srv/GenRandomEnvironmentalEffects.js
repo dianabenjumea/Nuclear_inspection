@@ -106,7 +106,7 @@ class GenRandomEnvironmentalEffectsRequest {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.folder.length;
+    length += _getByteLength(object.folder);
     return length + 18;
   }
 

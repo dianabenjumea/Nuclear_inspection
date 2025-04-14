@@ -93,16 +93,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsFixedSize< ::gazebo_radiation_plugins::Command_<ContainerAllocator> >
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
-struct IsFixedSize< ::gazebo_radiation_plugins::Command_<ContainerAllocator> const>
-  : FalseType
-  { };
-
-template <class ContainerAllocator>
 struct IsMessage< ::gazebo_radiation_plugins::Command_<ContainerAllocator> >
   : TrueType
   { };
@@ -110,6 +100,16 @@ struct IsMessage< ::gazebo_radiation_plugins::Command_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsMessage< ::gazebo_radiation_plugins::Command_<ContainerAllocator> const>
   : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::gazebo_radiation_plugins::Command_<ContainerAllocator> >
+  : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsFixedSize< ::gazebo_radiation_plugins::Command_<ContainerAllocator> const>
+  : FalseType
   { };
 
 template <class ContainerAllocator>

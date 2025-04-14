@@ -73,9 +73,9 @@ class ConvertWorldBuilderModelRequest {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.world_builder_file.length;
-    length += object.gazebo_model_path.length;
-    length += object.noise_file.length;
+    length += _getByteLength(object.world_builder_file);
+    length += _getByteLength(object.gazebo_model_path);
+    length += _getByteLength(object.noise_file);
     return length + 12;
   }
 

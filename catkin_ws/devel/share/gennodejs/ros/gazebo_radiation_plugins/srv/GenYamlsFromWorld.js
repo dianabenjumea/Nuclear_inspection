@@ -106,9 +106,9 @@ class GenYamlsFromWorldRequest {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.folder.length;
-    length += object.world_filename.length;
-    length += object.model_subset_filename.length;
+    length += _getByteLength(object.folder);
+    length += _getByteLength(object.world_filename);
+    length += _getByteLength(object.model_subset_filename);
     return length + 24;
   }
 

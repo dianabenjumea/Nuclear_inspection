@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/radiation_source.dir/src/RadiationSource.cpp.o"
   "/home/ubuntu/catkin_ws/devel/lib/libradiation_source.pdb"
   "/home/ubuntu/catkin_ws/devel/lib/libradiation_source.so"
+  "CMakeFiles/radiation_source.dir/src/RadiationSource.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

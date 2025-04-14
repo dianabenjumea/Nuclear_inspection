@@ -84,7 +84,7 @@ class Simulated_Radiation_Msg {
   static getMessageSize(object) {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
-    length += object.type.length;
+    length += _getByteLength(object.type);
     return length + 68;
   }
 

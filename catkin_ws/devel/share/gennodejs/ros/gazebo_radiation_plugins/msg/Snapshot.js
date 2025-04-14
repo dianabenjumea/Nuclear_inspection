@@ -140,7 +140,7 @@ class Snapshot {
   static getMessageSize(object) {
     let length = 0;
     length += Command.getMessageSize(object.command);
-    length += object.radiationStatus.length;
+    length += _getByteLength(object.radiationStatus);
     return length + 98;
   }
 

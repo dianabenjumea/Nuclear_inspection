@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   radiation-storage:
-    image: ros-melodic:nuclear-inspection  # Use a prebuilt image if available
+    image: ros-noetic:nuclear-inspection  # Use a prebuilt image if available
     container_name: nuclear-inspection
     build:
       context: .

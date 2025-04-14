@@ -62,8 +62,8 @@ class GenWorldsFromModelsRequest {
 
   static getMessageSize(object) {
     let length = 0;
-    length += object.folder.length;
-    length += object.model_filename.length;
+    length += _getByteLength(object.folder);
+    length += _getByteLength(object.model_filename);
     return length + 8;
   }
 

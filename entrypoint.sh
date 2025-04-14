@@ -362,4 +362,4 @@ echo "NOTE: Before stopping to commit docker container to new docker image, log 
 echo -e 'See \e]8;;https://github.com/Tiryoh/docker-ros2-desktop-vnc/issue/131\e\\https://github.com/Tiryoh/docker-ros2-desktop-vnc/issue/131\e]8;;\e\\'
 echo "============================================================================================"
 
-exec /usr/bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf
+exec /bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf

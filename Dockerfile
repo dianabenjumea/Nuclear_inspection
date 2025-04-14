@@ -1,4 +1,4 @@
-FROM tiryoh/ros-desktop-vnc:melodic
+FROM tiryoh/ros-desktop-vnc:noetic
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -12,20 +12,20 @@ RUN apt update && apt install -y \
     wget \
     unzip \
     git \
-    ros-melodic-rosbridge-server \
-    ros-melodic-navigation \
-    ros-melodic-jackal-* \
-    ros-melodic-teleop-twist-keyboard \
-    ros-melodic-pcl-ros \
-    ros-melodic-velodyne \
-    ros-melodic-velocity-controllers \
-    ros-melodic-teb-local-planner \
-    ros-melodic-pointcloud-to-laserscan \
-    ros-melodic-gazebo-ros-pkgs \
-    ros-melodic-velodyne-gazebo-plugins \
-    ros-melodic-joint-state-publisher-gui \ 
-    ros-melodic-ros-controllers \
-    ros-melodic-openslam-gmapping \
+    ros-noetic-rosbridge-server \
+    ros-noetic-navigation \
+    ros-noetic-jackal-* \
+    ros-noetic-teleop-twist-keyboard \
+    ros-noetic-pcl-ros \
+    ros-noetic-velodyne \
+    ros-noetic-velocity-controllers \
+    ros-noetic-teb-local-planner \
+    ros-noetic-pointcloud-to-laserscan \
+    ros-noetic-gazebo-ros-pkgs \
+    ros-noetic-velodyne-gazebo-plugins \
+    ros-noetic-joint-state-publisher-gui \ 
+    ros-noetic-ros-controllers \
+    ros-noetic-openslam-gmapping \
     && apt clean && rm -rf /var/lib/apt/lists/*
 
 ## Install Apache Maven
@@ -62,7 +62,7 @@ WORKDIR /home/ubuntu
 USER root
 RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list' && \
     curl -sSL https://packages.osrfoundation.org/gazebo.key | apt-key add - && \
-    apt update && apt install -y ros-melodic-gazebo-ros && \
+    apt update && apt install -y ros-noetic-gazebo-ros && \
     apt clean && rm -rf /var/lib/apt/lists/*
 
 

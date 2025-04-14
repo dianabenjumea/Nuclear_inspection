@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/radiation_sensor.dir/src/RadiationSensor.cpp.o"
   "/home/ubuntu/catkin_ws/devel/lib/libradiation_sensor.pdb"
   "/home/ubuntu/catkin_ws/devel/lib/libradiation_sensor.so"
+  "CMakeFiles/radiation_sensor.dir/src/RadiationSensor.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

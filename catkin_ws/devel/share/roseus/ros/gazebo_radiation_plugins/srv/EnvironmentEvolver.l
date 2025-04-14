@@ -58,8 +58,8 @@
    (setq _finished __finished)
    self)
   (:finished
-   (&optional __finished)
-   (if __finished (setq _finished __finished)) _finished)
+   (&optional (__finished :null))
+   (if (not (eq __finished :null)) (setq _finished __finished)) _finished)
   (:serialization-length
    ()
    (+

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/radiation_layer_generate_messages_eus"
   "/home/ubuntu/catkin_ws/devel/share/roseus/ros/radiation_layer/manifest.l"
+  "CMakeFiles/radiation_layer_generate_messages_eus"
 )
 
 # Per-language clean rules from dependency scanning.
